@@ -4,7 +4,7 @@ defmodule Poster do
   @api_key "4vwhkrxc7amvwtevvcxzgjq7"
 
   def fetch(titles) do
-    titles |> do_fetch_links #|> do_download_files
+    titles |> do_fetch_links |> do_download_files
   end
 
   def do_download_files(links) do
